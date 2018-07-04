@@ -196,4 +196,5 @@
 
 // Looping through array
 
-const car = ['Ford', 'Honda', 'Toyota', 'Chevy'];
+//const car = ['Ford', 'Honda', 'Toyota', 'Chevy'];
+
