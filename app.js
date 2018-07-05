@@ -198,3 +198,292 @@
 
 //const car = ['Ford', 'Honda', 'Toyota', 'Chevy'];
 
+
+
+/////////////////////////////
+// MERGED HERE /////////////
+///////////////////////////
+
+
+
+// Arrays
+// create arrays
+/*
+const numbers = [34, 56, 67, 46];
+const number2 = new Array(34, 45, 64, 3);
+const fruits = ['Apple', 'Orange', 'Lemon', 'Peach'];
+
+let val;
+
+//Get array lenght
+val = numbers.length;
+//Check if it is array
+val = Array.isArray(numbers);
+//Get single value
+val = numbers[3];
+val = numbers[0];
+//Insert into arrays
+numbers[2] = 100;
+//Find index of value
+val = numbers.indexOf(100);
+
+//MUTATING ARRAYS
+//Add on to the end
+numbers.push(250);
+//Add on to the front
+numbers.unshift(10);
+//Take off from end
+numbers.pop();
+//Take of from the front
+numbers.shift();
+//Splice values (where we want to start and where we want to end)
+numbers.splice(1,1);
+//Reverse array
+numbers.reverse();
+//Concatenate arrays
+val = numbers.concat(number2);
+
+console.log(val);
+console.log(numbers);
+
+
+// OBJECT LITERALS
+const person = {
+    firstName: 'Steve',
+    lastName: 'Smith',
+    age: 30,
+    email: 'steve@aol.com',
+    hobbies: ['music', 'sports'],
+    address: {
+        city: 'Rochester',
+        state: 'MN',
+    },
+    getBirthYear: function(){
+        return 1983;
+    }
+}
+
+let val;
+val = person;
+
+//Get specific value
+val = person.firstName;
+val = person.age
+val = person.getBirthYear;
+//val megfelel az Array bizonyos számú elemével
+val = person.hobbies[1];
+val = person.address;
+//val megfelel az Object bizonyos elemével
+val = person.address.state;
+val = person.getBirthYear();
+
+console.log(val);
+
+const people = [
+    {name: 'Kevin', age: 30 },
+    {name: 'John', age: 40},
+];
+
+
+// DATES & TIME
+let val;
+
+const today = new Date();
+let birthday = new Date ('06-24-1983 22:45:12');
+birthday = new Date ('June 24 1983');
+birthday = new Date ('06/24/1983');
+
+val = birthday.getMonth();
+val = birthday.getDate();
+val = today.getFullYear();
+
+
+console.log(val);
+
+
+// IF
+if(something){
+    do something
+} else {
+    do something else
+}
+
+
+const id = 100;
+
+// EQUAL TO
+if(id == 100){
+console.log('CORRECT');
+} else {
+console.log('INCORRECT');
+}
+
+//NOT EQUAL TO
+if(id != 101){
+console.log('CORRECT');
+} else {
+console.log('INCORRECT');
+}
+
+//EQUAL TO VALUE AND TYPE
+if(id === 100){
+console.log('CORRECT');
+} else {
+console.log('INCORRECT');
+}
+
+//NOT EQUAL TO VALUE AND TYPE
+if(id !== 100){
+console.log('CORRECT');
+} else {
+console.log('INCORRECT');
+}
+
+
+//const id = 100;
+if (typeof id !== 'undefined'){
+    console.log(`The ID is ${id}`);
+} else {
+    console.log('No ID');
+}
+
+
+const id = 40;
+//GREATER THAN LESS THAN
+
+if(id > '50'){
+    console.log('CORRECT');
+} else {
+    console.log('INCORRECT');
+}
+
+
+const id = 40;
+//IF ELSE
+const color = 'Red';
+
+if (color === 'Red'){
+    console.log('The color is Red');
+} else if (color === 'Blue'){
+    console.log('The color is Blue');
+} else {
+    console.log('The color is not Red or Blue');
+}
+
+
+// LOGICAL OPERATORS  - - && this AND this are true
+const color = 'Yellow';
+const name = 'Steve';
+const age = 15;
+
+// AND &&
+if(age > 0 && age < 12){
+    console.log(`${name} is a child`);
+} else if(age >= 13 && age < 19){
+    console.log(`${name} is a teenager`);
+} else {
+    console.log(`${name} is an adult`);
+}
+
+// OR ||
+if(age < 6 || age > 65){
+    console.log(`${name} can not join the event`);
+} else {
+    console.log(`${name} can join the event`);
+}
+
+// TERNARY OPERATOR (feltétel ? akkor : egyéb esetben)
+const id = 100;
+console.log(id === 100 ? 'CORRECT' : 'INCORRECT');
+
+
+
+// FUNCTIONS DECLARATION
+function greet(){
+    return 'Hello';
+}
+
+
+function greet(firstName, lastName){
+    return 'Hello' + ' ' + firstName + ' ' + lastName;
+}
+
+console.log(greet('John', 'Doe'));
+
+//Default value is defined in the function line
+function greet(firstName = 'John', lastName = 'Doe'){
+    return 'Hello' + ' ' + firstName + ' ' + lastName;
+}
+
+//console.log(greet());
+
+//FUNCTION EXPRESSIONS
+
+const square = function(x){
+    return x*x;
+}
+
+console.log(square(2345));
+
+
+//IMMEDIATELLY INVOKABLE FUNTION EXPRESSIONS - IIFEs
+(function(name){
+    console.log('Hello' + ' ' + name);
+})('Norbert');
+
+
+// PROPERTY METHODS - - - When a function is put inside of an object is a method
+const todo = {
+    add: function(){
+        console.log('Add todo...');
+    },
+    edit: function(id){
+        console.log(`Edit todo ${id}`);
+    } 
+}
+
+
+//LOOP Through Array
+const cars = ['Ford', 'Honda', 'Chevy', 'Toyota'];
+
+for (let i = 0; i < cars.length; i++){
+    console.log(cars[i]);
+}
+
+// FOREACH
+const cars = ['Ford', 'Honda', 'Chevy', 'Toyota'];
+cars.forEach(function(car){
+    console.log(car);
+});
+
+
+// MAP
+const users = [
+    {id:'039', name:'John'},
+    {id:'166', name:'Bill'},
+    {id:'270', name: 'Sara'},
+];
+
+const ids = users.map(function(user){
+    return user.id;
+});
+
+console.log(ids);
+
+
+const cars = ['Ford', 'Honda', 'Chevy', 'Toyota'];
+cars.forEach(function(car, index){
+    console.log(`${index} : ${car}`);
+});
+*/
+
+//FOR IN LOOP
+const user = {
+    firstName: 'John',
+    lastName: 'Doe',
+    age: 40
+}
+
+for(let x in user){
+    console.log(`${x} : ${user[x]}`);
+}
