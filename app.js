@@ -475,7 +475,7 @@ const cars = ['Ford', 'Honda', 'Chevy', 'Toyota'];
 cars.forEach(function(car, index){
     console.log(`${index} : ${car}`);
 });
-*/
+
 
 //FOR IN LOOP
 const user = {
@@ -487,3 +487,66 @@ const user = {
 for(let x in user){
     console.log(`${x} : ${user[x]}`);
 }
+
+// WINDOW METHODS / OBJECTS / PROPERTIES
+
+//ALERT
+//alert('Hello World');
+
+//PROMPT
+//const input = prompt();
+//alert(input);
+
+//CONFIRM
+//if (confirm('Are you sure?')) {
+//    alert('OK, ti is done');
+//} else {
+//    alert('No worries');
+//}
+
+//PROPERTIES
+let val;
+
+//OUTTER HIGTH AND WIDTH OF THE WINDOW
+//val = window.outerHeight;
+//val = window.outerWidth;
+
+//INNER HIGHT AND WIDTH OF WINDOW
+//val = window.innerHeight;
+//val = window.innerWidth;
+
+//SCROLL POINTS
+//val = window.scrollY;
+//val = window.scrollX;
+
+//LOCATION
+val = window.location;
+
+//REDIRECT
+//window.location.href = 'http://google.com';
+
+//RELOAD
+//window.location.reload();
+
+//HISTORY OBJECT
+//window.history.go(-2);
+
+console.log(val);
+
+
+//GLOBAL SCOPE
+var a = 1;
+let b = 2;
+const c = 3;
+
+//function test() {
+//    var a = 4;
+//    let b = 5;
+//    const c = 6;
+//    console.log('Function Scope ', a, b, c);
+//}
+
+// test();
+
+console.log('Global Scope ', a, b, c);
+*/
