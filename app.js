@@ -51,3 +51,13 @@ console.log(document.querySelector('.card-title'));
 //selecting on element
 console.log(document.querySelector('h5'));
 */
+
+// GET ELEMENTS BY CLASS NAME
+//document.getElementsClassName
+
+const items = document.getElementsByClassName('collection-items');
+console.log(items);
+console.log(items[0]);
+
+items[0].style.color = 'red';
+item[3].textContent = 'Hello';
