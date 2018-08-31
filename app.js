@@ -53,11 +53,33 @@ console.log(document.querySelector('h5'));
 */
 
 // GET ELEMENTS BY CLASS NAME
-//document.getElementsClassName
+//document.getElementsByClassName
 
-const items = document.getElementsByClassName('collection-items');
-console.log(items);
-console.log(items[0]);
+//const items = document.getElementsByClassName('collection-items');
+//console.log(items);
+//console.log(items[0]);
 
-items[0].style.color = 'red';
-item[3].textContent = 'Hello';
+//items[0].style.color = 'red';
+//item[3].textContent = 'Hello';
+
+// document.getElementByTagName
+//const lis = document.getElementsByTagName('li');
+//console.log(lis);
+//console.log(lis[0]);
+//lis[0].style.color = 'red';
+//lis[3].textContent = 'Hello';
+
+// document.querySelectorAll
+//const itmes = document.querySelectorAll('ul.collection
+//lis.collection-item');
+
+
+
+// TRAVERSING DOM
+let val;
+
+
+const list = document.querySelector('ul.collection');
+const listItem = document.querySelector('li.collection-item:first-child');
+ 
+Console.log(val);
