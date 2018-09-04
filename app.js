@@ -76,10 +76,38 @@ console.log(document.querySelector('h5'));
 
 
 // TRAVERSING DOM
-let val;
+//let val;
+//const list = document.querySelector('ul.collection');
+//const listItem = document.querySelector('li.collection-item:first-child');
+//Console.log(val);
 
 
-const list = document.querySelector('ul.collection');
-const listItem = document.querySelector('li.collection-item:first-child');
- 
-Console.log(val);
+
+
+//CREATE THE ELEMENT
+const li = document.createElement('li'); 
+
+//Add Clas
+li.className = 'collection-item';
+
+//Add ID
+li.id = 'new item';
+
+//Add attribute
+li.setAttribute('title', 'New Item');
+
+//Add text node and append
+li.appendChild(document.createTextNode('List Item'));
+
+//Create new link element
+const link = document.createElement('a');
+//Add class
+link.className = 'delete-item secondary-content';
+//Add icon html
+link.innerHTML = '<i class="fa fa-remove"></i>';
+
+//Append li as child to ul
+document.querySelector('ul.collection').appendChild(li);
+
+
+console.log(li);
