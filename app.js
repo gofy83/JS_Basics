@@ -83,31 +83,33 @@ console.log(document.querySelector('h5'));
 
 
 
-
 //CREATE THE ELEMENT
-const li = document.createElement('li'); 
+//const li = document.createElement('li'); 
 
-//Add Clas
-li.className = 'collection-item';
+//Add Class
+//li.className = 'collection-item';
 
 //Add ID
-li.id = 'new item';
+//li.id = 'new item';
 
 //Add attribute
-li.setAttribute('title', 'New Item');
+//li.setAttribute('title', 'New Item');
 
 //Add text node and append
-li.appendChild(document.createTextNode('List Item'));
+//li.appendChild(document.createTextNode('List Item'));
 
 //Create new link element
-const link = document.createElement('a');
+//const link = document.createElement('a');
 //Add class
-link.className = 'delete-item secondary-content';
+//link.className = 'delete-item secondary-content';
 //Add icon html
-link.innerHTML = '<i class="fa fa-remove"></i>';
+//link.innerHTML = '<i class="fa fa-remove"></i>';
 
 //Append li as child to ul
-document.querySelector('ul.collection').appendChild(li);
+//document.querySelector('ul.collection').appendChild(li);
 
+//console.log(li);
 
-console.log(li);
+const x = myFunction(4, 3);
+function myFunction(a, b);
+console.log(x);
