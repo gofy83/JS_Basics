@@ -110,6 +110,20 @@ console.log(document.querySelector('h5'));
 
 //console.log(li);
 
-const x = myFunction(4, 3);
-function myFunction(a, b);
-console.log(x);
+//const x = myFunction(4,3);
+//function myFunction(a,b);
+//console.log(x);
+
+let greeting;
+const hour = new Date().getHours();
+if ( hour < 10) {
+    greeting = "Jó reggelt!";
+} else if ( hour < 17){
+    greeting = "Jó napot!";
+} else if (hour < 21){
+    greeting = "Jó estét!";
+} else {
+    greeting = "Jó éjszakát!";
+};
+console.log(greeting);
+console.log(hour);
