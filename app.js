@@ -114,16 +114,52 @@ console.log(document.querySelector('h5'));
 //function myFunction(a,b);
 //console.log(x);
 
-let greeting;
-const hour = new Date().getHours();
-if ( hour < 10) {
-    greeting = "Jó reggelt!";
-} else if ( hour < 17){
-    greeting = "Jó napot!";
-} else if (hour < 21){
-    greeting = "Jó estét!";
-} else {
-    greeting = "Jó éjszakát!";
-};
-console.log(greeting);
-console.log(hour);
+ 
+//  - - - - IF, ELSE, ELSE IF - - - -
+
+
+//let greeting;
+//const hour = new Date().getHours();
+//if ( hour < 10) {
+//    greeting = "Jó reggelt!";
+//} else if ( hour < 17){
+//    greeting = "Jó napot!";
+//} else if (hour < 21){
+//    greeting = "Jó estét!";
+//} else {
+//    greeting = "Jó éjszakát!";
+//};
+//console.log(greeting);
+//console.log(hour);
+
+
+// - - - - SWITCH - - - 
+
+let dayName;
+const dayIndex = new Date().getDay();
+switch (dayIndex) {
+    case 0:
+        dayName = "Sunday";
+        break;
+    case 1:
+        dayName = "Monday";
+        break;
+    case 2: 
+        dayName = "Tuesday";
+        break;
+    case 3:
+        dayName = "Wednesday";
+        break;
+    case 4:
+        dayName = "Thursday";
+        break;
+    case 5:
+        dayName = "Friday";
+        break;
+    default:
+        dayName = "Saturday";
+}
+
+
+console.log(dayIndex);
+console.log(dayName);
