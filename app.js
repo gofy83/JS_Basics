@@ -110,6 +110,9 @@ console.log(document.querySelector('h5'));
 
 //console.log(li);
 
-const x = myFunction(4, 3);
-function myFunction(a, b);
-console.log(x);
+//const x = myFunction(4, 3);
+//function myFunction(a, b) {
+//    return a * b;
+//}
+//console.log(x);
+
