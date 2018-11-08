@@ -134,7 +134,7 @@ console.log(document.querySelector('h5'));
 
 
 // - - - - SWITCH - - - 
-
+/*
 let dayName;
 const dayIndex = new Date().getDay();
 switch (dayIndex) {
@@ -159,7 +159,15 @@ switch (dayIndex) {
     default:
         dayName = "Saturday";
 }
-
-
 console.log(dayIndex);
 console.log(dayName);
+*/
+
+//  - - -  LOOP - - - 
+
+let cars = ["Audi", "BMW", "Fiat", "Ford", "Citroen"];
+let text;
+for (i = 0; i < cars.length; i++) {
+    text = cars[i];
+    console.log(text);
+}
