@@ -163,11 +163,13 @@ console.log(dayIndex);
 console.log(dayName);
 */
 
-//  - - -  LOOP - - - 
-
+//  - - -  FOR LOOP - - - 
+/*
 let cars = ["Audi", "BMW", "Fiat", "Ford", "Citroen"];
 let text;
 for (i = 0; i < cars.length; i++) {
     text = cars[i];
     console.log(text);
 }
+*/
+
